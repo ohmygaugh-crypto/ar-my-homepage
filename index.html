@@ -26,11 +26,27 @@
     }, 100);
     checkExist;
   </script>
+  <style>
+     /* Existing styles for the splash screen */
+     #splashScreen {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; /* Adjust the width of the splash screen */
+      max-width: 400px; /* Set a maximum width if needed */
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      z-index: 9999;
+    }
+  </style>
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
   <main class="main">
-    <div id="splashScreen" class="AR-tip" style="display:none">
+    <div id="splashScreen" class="AR-tip" style="display:block">
       <p>
         <strong>Welcome to my Augmented Reality Business Card!</strong> <br> <br> Once the camera is loaded,
         click "Start" and aim your device camera to the business card marker. <br>
